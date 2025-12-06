@@ -10,7 +10,10 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: ./openwrt_${{ inputs.mode }}.sh
+    - run: 
+      ls ./
+      pwd
+      ./openwrt_${{ inputs.mode }}.sh
       shell: bash
 
 branding:
